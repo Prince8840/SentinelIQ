@@ -52,8 +52,8 @@ const COLORS = ["#ff4d4f", "#52c41a"];
     try {
       setLoading(true);
 
-      const response = await axios.post(
-        "http://127.0.0.1:8000/incident/analyze",
+      const response =await axios.post(
+  "https://sentineliq-ocz4.onrender.com/incident/analyze",
         {
           incident: incident,
         }
