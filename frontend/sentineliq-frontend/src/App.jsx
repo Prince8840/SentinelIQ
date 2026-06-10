@@ -165,23 +165,18 @@ const COLORS = ["#ff4d4f", "#52c41a"];
         
       >
         <div className="hero-section">
+ 
+ <div className="hero-section">
   <h1>🛡️ SentinelIQ</h1>
-  <h3>AI-Powered Multi-Agent Incident Command Platform</h3>
 
-  <a
-  href="https://github.com/Prince8840/SentinelIQ"
-  target="_blank"
->
-  View Source Code
-</a>
+  <h3>
+    AI-Powered Multi-Agent Incident Command Platform
+  </h3>
 
-  <div className="features">
-    <span>✅ Incident Analysis</span>
-    <span>✅ Risk Assessment</span>
-    <span>✅ Threat Intelligence</span>
-    <span>✅ Executive Decision Support</span>
-    <span>✅ Gemini AI Reasoning</span>
-  </div>
+  <p>
+    11 Specialized Agents • Gemini AI • Real-Time Threat Intelligence
+  </p>
+</div>
 </div>
         
         <input
@@ -199,54 +194,114 @@ const COLORS = ["#ff4d4f", "#52c41a"];
           
         />
 
-        <div className="workflow-card">
-  <h2>⚙️ How It Works</h2>
+{/* Buttons */}
+<div
+  style={{
+    display: "flex",
+    gap: "10px",
+    justifyContent: "center",
+    marginTop: "15px",
+  }}
+>
+  <button
+    onClick={() =>
+      setIncident(
+        "Hospital ransomware attack affecting patient records and billing systems"
+      )
+    }
+    style={{
+      padding: "12px 20px",
+      cursor: "pointer",
+      borderRadius: "8px",
+      fontWeight: "bold",
+    }}
+  >
+    🚀 Try Demo Incident
+  </button>
 
-  <ol>
-    <li>User submits an incident</li>
-    <li>Analyzer Agent classifies the threat</li>
-    <li>Risk Agent calculates severity</li>
-    <li>Prediction Agent estimates impact</li>
-    <li>Strategy Agent generates response plan</li>
-    <li>Gemini AI provides executive recommendations</li>
-  </ol>
+  <button
+    onClick={analyzeIncident}
+    style={{
+      padding: "12px 25px",
+      cursor: "pointer",
+      borderRadius: "8px",
+      fontWeight: "bold",
+    }}
+  >
+    {loading ? "Analyzing..." : "Analyze"}
+  </button>
 </div>
 
-
-<button
-  onClick={() =>
-    setIncident(
-      "Hospital ransomware attack affecting patient records and billing systems"
-    )
-  }
+{/* How It Works + Example Output */}
+<div
+  style={{
+    display: "flex",
+    gap: "20px",
+    justifyContent: "center",
+    alignItems: "stretch",
+    marginTop: "30px",
+    flexWrap: "wrap",
+  }}
 >
-  🚀 Try Demo Incident
-</button>
+  {/* How It Works */}
+  <div
+    style={{
+      flex: 1,
+      minWidth: "350px",
+      maxWidth: "500px",
+      border: "1px solid #444",
+      borderRadius: "12px",
+      padding: "20px",
+      background: "#111827",
+    }}
+  >
+    <h2>⚙️ How It Works</h2>
 
-        <button
-          onClick={analyzeIncident}
-          style={{
-            padding: "12px 25px",
-            cursor: "pointer",
-            borderRadius: "8px",
-            fontWeight: "bold",
-          }}
-        >
-          {loading ? "Analyzing..." : "Analyze"}
-        </button>
+    <ul
+      style={{
+        textAlign: "left",
+        lineHeight: "2",
+      }}
+    >
+      <li>User submits an incident</li>
+      <li>Analyzer Agent classifies the threat</li>
+      <li>Risk Agent calculates severity</li>
+      <li>Prediction Agent estimates impact</li>
+      <li>Strategy Agent generates response plan</li>
+      <li>Gemini AI provides executive recommendations</li>
+    </ul>
+  </div>
 
+  {/* Example Output */}
+  <div
+    style={{
+      flex: 1,
+      minWidth: "350px",
+      maxWidth: "500px",
+      border: "1px solid #444",
+      borderRadius: "12px",
+      padding: "20px",
+      background: "#111827",
+    }}
+  >
+    <h2>📄 Example Output</h2>
 
-        <div className="example-card">
-  <h2>📄 Example Output</h2>
+    <p>
+      <b>Risk Score:</b> 95
+    </p>
 
-  <p><b>Risk Score:</b> 95</p>
+    <p>
+      <b>Executive Decision:</b>{" "}
+      <span style={{ color: "#ff4d4f" }}>
+        STOP OPERATIONS
+      </span>
+    </p>
 
-  <p><b>Executive Decision:</b> STOP OPERATIONS</p>
-
-  <p>
-    Critical ransomware attack detected.
-    Immediate containment and executive attention required.
-  </p>
+    <p>
+      Critical ransomware attack detected.
+      Immediate containment and executive attention required.
+    </p>
+  </div>
 </div>
 
         {result && (
