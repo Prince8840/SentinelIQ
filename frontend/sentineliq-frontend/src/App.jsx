@@ -162,7 +162,28 @@ const COLORS = ["#ff4d4f", "#52c41a"];
           textAlign: "center",
           marginBottom: "30px",
         }}
+        
       >
+        <div className="hero-section">
+  <h1>🛡️ SentinelIQ</h1>
+  <h3>AI-Powered Multi-Agent Incident Command Platform</h3>
+
+  <a
+  href="https://github.com/Prince8840/SentinelIQ"
+  target="_blank"
+>
+  View Source Code
+</a>
+
+  <div className="features">
+    <span>✅ Incident Analysis</span>
+    <span>✅ Risk Assessment</span>
+    <span>✅ Threat Intelligence</span>
+    <span>✅ Executive Decision Support</span>
+    <span>✅ Gemini AI Reasoning</span>
+  </div>
+</div>
+        
         <input
           type="text"
           placeholder="Enter Incident..."
@@ -174,7 +195,33 @@ const COLORS = ["#ff4d4f", "#52c41a"];
             marginRight: "10px",
             borderRadius: "8px",
           }}
+
+          
         />
+
+        <div className="workflow-card">
+  <h2>⚙️ How It Works</h2>
+
+  <ol>
+    <li>User submits an incident</li>
+    <li>Analyzer Agent classifies the threat</li>
+    <li>Risk Agent calculates severity</li>
+    <li>Prediction Agent estimates impact</li>
+    <li>Strategy Agent generates response plan</li>
+    <li>Gemini AI provides executive recommendations</li>
+  </ol>
+</div>
+
+
+<button
+  onClick={() =>
+    setIncident(
+      "Hospital ransomware attack affecting patient records and billing systems"
+    )
+  }
+>
+  🚀 Try Demo Incident
+</button>
 
         <button
           onClick={analyzeIncident}
@@ -187,6 +234,20 @@ const COLORS = ["#ff4d4f", "#52c41a"];
         >
           {loading ? "Analyzing..." : "Analyze"}
         </button>
+
+
+        <div className="example-card">
+  <h2>📄 Example Output</h2>
+
+  <p><b>Risk Score:</b> 95</p>
+
+  <p><b>Executive Decision:</b> STOP OPERATIONS</p>
+
+  <p>
+    Critical ransomware attack detected.
+    Immediate containment and executive attention required.
+  </p>
+</div>
 
         {result && (
           <button
