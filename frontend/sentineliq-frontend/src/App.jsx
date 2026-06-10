@@ -167,15 +167,13 @@ const COLORS = ["#ff4d4f", "#52c41a"];
         <div className="hero-section">
  
  <div className="hero-section">
-  <h1>🛡️ SentinelIQ</h1>
+ 
 
   <h3>
     AI-Powered Multi-Agent Incident Command Platform
   </h3>
 
-  <p>
-    11 Specialized Agents • Gemini AI • Real-Time Threat Intelligence
-  </p>
+ 
 </div>
 </div>
         
