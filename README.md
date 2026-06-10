@@ -1,135 +1,143 @@
 
-# SentinelIQ
+# 🛡️ SentinelIQ
 
 ## AI-Powered Multi-Agent Incident Command Platform
 
-SentinelIQ is an intelligent incident management and response platform designed to help organizations quickly analyze, assess, and respond to critical incidents. The platform uses a Multi-Agent AI Architecture combined with Google's Gemini AI to provide risk assessment, impact prediction, response strategies, executive recommendations, and threat intelligence.
+### 🚀 Live Demo
+
+**Frontend (Vercel)**
+https://sentinel-iq-omega.vercel.app
+
+**Backend API (Render)**
+https://sentineliq-ocz4.onrender.com
+
+**GitHub Repository**
+https://github.com/Prince8840/SentinelIQ
 
 ---
 
-## Problem Statement
+## 📌 Overview
 
-Organizations face various incidents such as:
+SentinelIQ is an intelligent cybersecurity and incident-response platform that leverages a Multi-Agent AI Architecture and Google Gemini AI to analyze incidents, assess risks, predict impacts, generate response strategies, and support executive decision-making in real time.
+
+The platform transforms complex incident information into actionable insights, enabling organizations to respond faster, reduce risk, and improve operational resilience.
+
+---
+
+## 🚀 Key Features
+
+* 🔍 Automated Incident Analysis
+* ⚠️ Risk Assessment & Severity Scoring
+* 📈 Impact Prediction
+* 🛡️ Response Strategy Generation
+* 📢 Executive Communication Support
+* 🤖 Gemini AI-Powered Recommendations
+* 📊 Threat Intelligence Feed
+* ⏱️ Recovery Timeline Estimation
+* ✅ Response Validation
+* 🧠 AI Reasoning Engine
+* 🚨 Executive Decision Support
+
+---
+
+## 🎯 Problem Statement
+
+Organizations frequently face critical incidents such as:
 
 * Cyber Attacks
-* Ransomware Incidents
+* Ransomware Campaigns
 * Data Breaches
+* Insider Threats
 * Fire Accidents
 * Chemical Leaks
 * Natural Disasters
 
-Traditional incident response systems are often slow, manual, and fragmented. Decision-makers need a unified platform that can provide rapid analysis and actionable insights.
+Traditional incident-response workflows are often manual, fragmented, and slow. Security teams and executives require a unified system capable of providing rapid analysis, impact assessment, and decision support.
 
 ---
 
-## Solution
+## 💡 Solution
 
-SentinelIQ provides:
+SentinelIQ automates the incident-response lifecycle using specialized AI agents working collaboratively.
 
-* Automated Incident Analysis
-* Risk Assessment
-* Impact Prediction
-* Response Strategy Generation
-* Threat Intelligence
-* Executive Decision Support
-* AI-Powered Reasoning using Gemini AI
+The platform:
 
-All outputs are generated through a collaborative Multi-Agent workflow.
-
----
-
-## Multi-Agent Architecture
-
-### Analyzer Agent
-
-Classifies and identifies incident types.
-
-### Risk Agent
-
-Calculates severity and risk scores.
-
-### Strategy Agent
-
-Generates recommended response actions.
-
-### Prediction Agent
-
-Predicts recovery time and financial impact.
-
-### Timeline Agent
-
-Creates incident response timelines.
-
-### Summary Agent
-
-Generates executive summaries.
-
-### Communication Agent
-
-Creates stakeholder communication messages.
-
-### Decision Agent
-
-Provides executive-level recommendations.
-
-### Threat Feed Agent
-
-Provides threat intelligence information.
-
-### Validator Agent
-
-Validates response quality and approval status.
-
-### AI Reasoning Agent (Gemini)
-
-Performs advanced contextual analysis and generates professional incident recommendations.
+1. Analyzes incoming incidents
+2. Identifies incident type and severity
+3. Calculates organizational risk
+4. Predicts operational and financial impact
+5. Generates response strategies
+6. Produces executive summaries
+7. Provides AI-powered recommendations
+8. Delivers threat intelligence and decision support
 
 ---
 
-## System Workflow
+## 🤖 Multi-Agent Architecture
+
+| Agent               | Responsibility                               |
+| ------------------- | -------------------------------------------- |
+| Analyzer Agent      | Classifies incidents and threats             |
+| Risk Agent          | Calculates risk score and severity           |
+| Strategy Agent      | Generates response strategies                |
+| Prediction Agent    | Predicts impact and recovery time            |
+| Timeline Agent      | Creates incident timelines                   |
+| Summary Agent       | Generates executive summaries                |
+| Communication Agent | Drafts stakeholder communications            |
+| Validator Agent     | Validates recommendations                    |
+| AI Commander Agent  | Provides executive guidance                  |
+| Decision Agent      | Generates action recommendations             |
+| Threat Feed Agent   | Produces threat intelligence updates         |
+| AI Reasoning Agent  | Gemini-powered reasoning and recommendations |
+
+---
+
+## 🔄 Workflow
 
 User Incident Input
-↓
+
+⬇
+
 Analyzer Agent
-↓
-Risk Agent
-↓
-Prediction Agent
-↓
-Strategy Agent
-↓
-Timeline Agent
-↓
-Threat Feed Agent
-↓
-Decision Agent
-↓
-Summary Agent
-↓
-Gemini AI Reasoning Agent
-↓
-Validator Agent
-↓
-SentinelIQ Dashboard
+
+⬇
+
+Risk Assessment
+
+⬇
+
+Impact Prediction
+
+⬇
+
+Strategy Generation
+
+⬇
+
+Executive Summary
+
+⬇
+
+Gemini AI Recommendations
+
+⬇
+
+Decision Support & Threat Intelligence
 
 ---
 
-## Technology Stack
+## 🛠 Technology Stack
 
 ### Frontend
 
 * React.js
-* Axios
 * Vite
-* jsPDF
+* Axios
 
 ### Backend
 
 * FastAPI
 * Python
-
-### AI
-
 * Google Gemini AI
 
 ### Deployment
@@ -137,80 +145,11 @@ SentinelIQ Dashboard
 * Vercel (Frontend)
 * Render (Backend)
 
-### Version Control
-
-* Git
-* GitHub
-
 ---
 
-## Key Features
+## 🏆 Hackathon Submission
 
-* Multi-Agent Incident Analysis
-* Risk Assessment Engine
-* Financial Impact Prediction
-* Recovery Time Estimation
-* Executive Decision Support
-* AI Reasoning using Gemini
-* Threat Intelligence Dashboard
-* Automated Communication Generation
-* Live Cloud Deployment
+SentinelIQ demonstrates how Multi-Agent AI systems can improve incident response through automated analysis, risk assessment, executive decision support, and AI-powered recommendations.
 
----
-
-## Example Incident
-
-Input:
-
-Hospital ransomware attack affecting patient records and billing systems
-
-Output:
-
-* Risk Assessment
-* Financial Impact Analysis
-* Recovery Timeline
-* Response Strategy
-* Executive Recommendations
-* Threat Intelligence
-* AI-Powered Reasoning
-
----
-
-## Live Demo
-
-Frontend:
-https://sentinel-iq-omega.vercel.app
-
-Backend:
-https://sentineliq-ocz4.onrender.com
-
----
-
-## GitHub Repository
-
-https://github.com/Prince8840/SentinelIQ
-
----
-
-## Future Enhancements
-
-* Real-Time Threat Intelligence APIs
-* Incident History Management
-* Authentication & Role-Based Access Control
-* PDF Report Generation
-* Predictive Analytics Dashboard
-* SIEM Integration
-* Cloud Monitoring Integration
-
----
-
-## Team
-
-Developed as a Hackathon Project to demonstrate AI-powered Incident Response Automation using a Multi-Agent Architecture and Gemini AI.
-
----
-
-## License
-
-This project is intended for educational, research, and hackathon purposes.
+The project showcases practical applications of AI agents in cybersecurity and crisis-management workflows.
 
